@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitPrefab: {fileID: 5058760937495656972, guid: b249d02e9c5897645805b3b337cb19b6, type: 3}
   unitHealthConfig:
-    defaultValue: 0
+    defaultValue: 100
     minValue: 0
-    maxValue: 0
+    maxValue: 100
   unitSpawnBounds:
     m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 9, y: 0, z: 9}
+    m_Extent: {x: 6, y: 0, z: 6}

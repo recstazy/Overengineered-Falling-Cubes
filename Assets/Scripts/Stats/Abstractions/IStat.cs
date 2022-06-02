@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace FallingDamage
 {
-    public interface IStat<T> where T : IComparable<T>
+    public interface IStat<T> : IClonable<IStat<T>> where T : IComparable<T>
     {
         T MinValue { get; }
         T MaxValue { get; }

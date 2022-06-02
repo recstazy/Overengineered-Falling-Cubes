@@ -14,7 +14,7 @@ namespace FallingDamage
 
         public void Initialize(IStat<float> config)
         {
-            Health = config;
+            Health = config.Clone();
             IsAlive = true;
         }
 

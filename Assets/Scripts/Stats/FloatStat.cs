@@ -32,5 +32,10 @@ namespace FallingDamage
             this.minValue = minValue;
             this.maxValue = maxValue;
         }
+
+        public override IStat<float> Clone()
+        {
+            return new FloatStat(this);
+        }
     }
 }

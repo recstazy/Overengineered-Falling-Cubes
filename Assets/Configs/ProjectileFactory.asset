@@ -13,3 +13,7 @@ MonoBehaviour:
   m_Name: ProjectileFactory
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5068426750730046638, guid: 531b8672a7f94c64f867075925b030b5, type: 3}
+  projectileBaseDamage:
+    defaultValue: 100
+    minValue: 0
+    maxValue: 100

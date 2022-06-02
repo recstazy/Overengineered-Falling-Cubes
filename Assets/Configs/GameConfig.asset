@@ -19,5 +19,6 @@ MonoBehaviour:
     m_Center: {x: 0, y: 5, z: 0}
     m_Extent: {x: 10, y: 10, z: 5}
   initialUnitsCount: 5
-  initialWallsCount: 10
+  initialWallsCount: 0
   projectilesSpawnedPerSecond: 2
+  restartKey: 32

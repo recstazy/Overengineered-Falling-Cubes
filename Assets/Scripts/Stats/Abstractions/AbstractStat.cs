@@ -23,6 +23,8 @@ namespace FallingDamage
             modifiers.RemoveAt(index);
         }
 
+        public abstract IStat<T> Clone();
+
         protected virtual T CalculateResultCurrentValue()
         {
             var currentValue = DefaultValue;

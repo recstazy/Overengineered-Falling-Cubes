@@ -9,6 +9,7 @@ namespace FallingDamage
         private IGameConfiguration configuration;
         private List<IGameEndConditionWatcher> gameEndConditions;
         private List<GameObject> walls;
+        private ISpawner projectileSpawner;
 
         private bool isGameEnded;
 
@@ -20,6 +21,7 @@ namespace FallingDamage
         public void Initialize(IGameConfiguration configuration)
         {
             this.configuration = configuration;
+            projectileSpawner = CreateProjectileSpawner();
             StartCoroutine(GameLoopRoutine());
         }
 
@@ -31,7 +33,7 @@ namespace FallingDamage
                 yield return new WaitUntil(() => isGameEnded);
                 EndGameLoop();
 
-                yield return null;
+                yield return new WaitUntil(() => Input.GetKeyDown(configuration.RestartKey));
             }
         }
 
@@ -41,10 +43,13 @@ namespace FallingDamage
             var units = CreateUnits();
             CreatePlatforms();
             CreateEndConditions(units);
+            projectileSpawner.StartSpawn();
         }
 
         private void EndGameLoop()
         {
+            projectileSpawner.StopSpawn();
+
             if (gameEndConditions != null)
             {
                 foreach (var c in gameEndConditions)
@@ -96,6 +101,20 @@ namespace FallingDamage
             var allunitsDeadCondition = new AllUnitsDeadGameEndConditionWatcher(units);
             allunitsDeadCondition.OnGameEnded += GameEnded;
             gameEndConditions.Add(allunitsDeadCondition);
+        }
+
+        private ISpawner CreateProjectileSpawner()
+        {
+            var pool = new FactoryPool<Projectile>(configuration.ProjectileFactory);
+            pool.InitializeWithCount(10);
+            var spawner = new ProjectileSpawner(pool);
+            var boundsCenter = configuration.RoomBounds.center + Vector3.up * configuration.RoomBounds.extents.y;
+            var boundsSize = configuration.RoomBounds.size;
+            boundsSize.y = 0f;
+            var bounds = new Bounds(boundsCenter, boundsSize);
+            spawner.SpawnBounds = bounds;
+            spawner.CountPerSecond = configuration.ProjectilesSpawnedPerSecond;
+            return spawner;
         }
 
         private void GameEnded() => isGameEnded = true;
