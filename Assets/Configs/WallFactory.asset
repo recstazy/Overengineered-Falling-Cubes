@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8ca4d5625cc8f48b83cb8ab9403c7b, type: 3}
+  m_Name: WallFactory
+  m_EditorClassIdentifier: 
+  wallPrefab: {fileID: 7798484355088604345, guid: b536503cd2ce18a4fb947855664c2b29, type: 3}
+  minWallSize: {x: 1, y: 1}
+  maxWallSize: {x: 5, y: 5}
+  wallSpawnBounds:
+    m_Center: {x: 0, y: 4, z: 0}
+    m_Extent: {x: 9, y: 3, z: 9}

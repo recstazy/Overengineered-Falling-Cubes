@@ -19,6 +19,13 @@ namespace FallingDamage
         public override float MaxValue { get => maxValue; protected set => maxValue = value; }
         public override float DefaultValue { get => defaultValue; protected set => defaultValue = value; }
 
+        public FloatStat(FloatStat source)
+        {
+            defaultValue = source.defaultValue;
+            minValue = source.minValue;
+            maxValue = source.maxValue;
+        }
+
         public FloatStat(float defaultValue, float minValue, float maxValue)
         {
             this.defaultValue = defaultValue;

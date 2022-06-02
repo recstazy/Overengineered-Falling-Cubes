@@ -4,12 +4,13 @@ namespace FallingDamage
 {
     public class Unit : MonoBehaviour, IDamagable
     {
-        public IDamagable HealthSystem { get; private set; }
+        public HealthSystem HealthSystem { get; private set; }
         public object Owner => this;
 
-        public void Initialize(IDamagable healthSystem)
+        public void Initialize(HealthSystem healthSystem)
         {
             HealthSystem = healthSystem;
+            HealthSystem.Owner = this;
         }
 
         public void TakeDamage(IDamaging damageCauser)
