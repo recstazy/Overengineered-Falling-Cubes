@@ -5,6 +5,8 @@ namespace FallingDamage
 {
     public interface IStat<T> : IClonable<IStat<T>> where T : IComparable<T>
     {
+        public event Action OnValueChanged;
+
         T MinValue { get; }
         T MaxValue { get; }
         T DefaultValue { get; }

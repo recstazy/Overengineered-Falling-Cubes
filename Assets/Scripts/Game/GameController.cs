@@ -114,6 +114,7 @@ namespace FallingDamage
             var bounds = new Bounds(boundsCenter, boundsSize);
             spawner.SpawnBounds = bounds;
             spawner.CountPerSecond = configuration.ProjectilesSpawnedPerSecond;
+            spawner.SpawnForce = configuration.ProjectileThrowImpulse;
             return spawner;
         }
 

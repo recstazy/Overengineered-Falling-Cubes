@@ -27,6 +27,9 @@ namespace FallingDamage
         private int projectilesSpawnedPerSecond;
 
         [SerializeField]
+        private float projectilrThrowInpulse;
+
+        [SerializeField]
         private KeyCode restartKey = KeyCode.Space;
 
         public IFactory<Unit> UnitFactory => unitFactory as IFactory<Unit>;
@@ -38,5 +41,6 @@ namespace FallingDamage
         public int InitialWallsCount => initialWallsCount;
         public int ProjectilesSpawnedPerSecond => projectilesSpawnedPerSecond;
         public KeyCode RestartKey => restartKey;
+        public float ProjectileThrowImpulse => projectilrThrowInpulse;
     }
 }

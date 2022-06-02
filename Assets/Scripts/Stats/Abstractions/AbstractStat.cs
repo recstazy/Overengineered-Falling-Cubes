@@ -5,6 +5,8 @@ namespace FallingDamage
 {
     public abstract class AbstractStat<T> : IStat<T> where T : IComparable<T>
     {
+        public event Action OnValueChanged;
+
         public virtual T MinValue { get; protected set; }
         public virtual T MaxValue { get; protected set; }
         public virtual T DefaultValue { get; protected set; }
@@ -16,11 +18,13 @@ namespace FallingDamage
         public void AddModifier(IStatModifier<T> modifier)
         {
             modifiers.Add(modifier);
+            OnValueChanged?.Invoke();
         }
 
         public void RemoveModifier(int index)
         {
             modifiers.RemoveAt(index);
+            OnValueChanged?.Invoke();
         }
 
         public abstract IStat<T> Clone();

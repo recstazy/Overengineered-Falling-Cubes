@@ -11,6 +11,7 @@ namespace FallingDamage
         int InitialUnitsCount { get; }
         int InitialWallsCount { get; }
         int ProjectilesSpawnedPerSecond { get; }
+        float ProjectileThrowImpulse { get; }
         KeyCode RestartKey { get; }
     }
 }

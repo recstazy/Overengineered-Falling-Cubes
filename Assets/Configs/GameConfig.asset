@@ -18,7 +18,8 @@ MonoBehaviour:
   worldBounds:
     m_Center: {x: 0, y: 5, z: 0}
     m_Extent: {x: 10, y: 10, z: 5}
-  initialUnitsCount: 5
-  initialWallsCount: 0
+  initialUnitsCount: 30
+  initialWallsCount: 5
   projectilesSpawnedPerSecond: 2
+  projectilrThrowInpulse: 5
   restartKey: 32
