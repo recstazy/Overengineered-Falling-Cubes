@@ -8,14 +8,15 @@ namespace FallingCubes.Core
     public class ProjectileFactory : ScriptableObject, IFactory<Projectile>
     {
         [SerializeField]
-        private Projectile projectilePrefab;
+        private Projectile[] projectilePrefabs;
 
         [SerializeField]
         private FloatStat projectileBaseDamage;
 
         public Projectile Create()
         {
-            var projectile = Instantiate(projectilePrefab);
+            var index = Random.Range(0, projectilePrefabs.Length);
+            var projectile = Instantiate(projectilePrefabs[index]);
             projectile.Weapon.Initialize(new FloatStat(projectileBaseDamage));
             return projectile;
         }

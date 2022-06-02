@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 350189f2c844fda4cb41a35ce4e8f297, type: 3}
   m_Name: ProjectileFactory
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 5068426750730046638, guid: 531b8672a7f94c64f867075925b030b5, type: 3}
+  projectilePrefabs:
+  - {fileID: 5068426750730046638, guid: 531b8672a7f94c64f867075925b030b5, type: 3}
+  - {fileID: 4257870551489993344, guid: 0d5502e2e1079e94ea9b71f86e818d0c, type: 3}
   projectileBaseDamage:
     defaultValue: 100
     minValue: 0
