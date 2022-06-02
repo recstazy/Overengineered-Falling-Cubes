@@ -17,4 +17,4 @@ MonoBehaviour:
   maxWallSize: {x: 5, y: 5}
   wallSpawnBounds:
     m_Center: {x: 0, y: 4, z: 0}
-    m_Extent: {x: 9, y: 3, z: 9}
+    m_Extent: {x: 7, y: 3, z: 7}
