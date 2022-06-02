@@ -1,6 +1,6 @@
 using System;
 
-namespace FallingDamage
+namespace FallingCubes
 {
     public interface IStatModifier<T> where T : IComparable<T> 
     {

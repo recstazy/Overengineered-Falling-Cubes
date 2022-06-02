@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace FallingDamage
+namespace FallingCubes
 {
     [RequireComponent(typeof(IWeapon), typeof(Rigidbody))]
     public class Projectile : MonoBehaviour 

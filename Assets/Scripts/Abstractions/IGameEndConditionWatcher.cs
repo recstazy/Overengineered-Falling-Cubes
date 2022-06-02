@@ -1,6 +1,6 @@
 using System;
 
-namespace FallingDamage
+namespace FallingCubes
 {
     public interface IGameEndConditionWatcher : IDisposable
     {

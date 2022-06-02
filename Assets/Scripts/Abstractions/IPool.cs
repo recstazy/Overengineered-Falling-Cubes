@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace FallingDamage
+namespace FallingCubes
 {
     public interface IPool<T> where T : Object
     {

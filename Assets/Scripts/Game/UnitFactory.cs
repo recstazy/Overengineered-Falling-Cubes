@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace FallingDamage
+namespace FallingCubes
 {
     [CreateAssetMenu(menuName = "Game/Unit Factory", fileName = nameof(UnitFactory), order = 131)]
     public class UnitFactory : ScriptableObject, IFactory<Unit>

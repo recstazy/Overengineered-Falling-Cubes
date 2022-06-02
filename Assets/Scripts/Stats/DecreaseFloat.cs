@@ -1,4 +1,4 @@
-namespace FallingDamage
+namespace FallingCubes
 {
     public struct DecreaseFloat : IStatModifier<float>
     {

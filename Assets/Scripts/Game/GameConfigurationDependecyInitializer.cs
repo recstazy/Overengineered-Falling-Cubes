@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace FallingDamage
+namespace FallingCubes
 {
     public class GameConfigurationDependecyInitializer : MonoBehaviour
     {

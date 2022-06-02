@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace FallingDamage
+namespace FallingCubes
 {
     public class GameController : MonoBehaviour, IDependent<IGameConfiguration>
     {

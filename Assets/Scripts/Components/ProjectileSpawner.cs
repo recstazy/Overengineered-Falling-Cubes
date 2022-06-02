@@ -2,7 +2,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace FallingDamage
+namespace FallingCubes
 {
     public class ProjectileSpawner : ISpawner
     {

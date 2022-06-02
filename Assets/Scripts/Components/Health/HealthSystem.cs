@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace FallingDamage
+namespace FallingCubes
 {
     public class HealthSystem : IDamagable, IOwnable
     {

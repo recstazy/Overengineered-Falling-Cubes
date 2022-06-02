@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace FallingDamage
+namespace FallingCubes
 {
     [Serializable]
     public class FloatStat : AbstractStat<float>

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace FallingDamage
+namespace FallingCubes
 {
     public class FactoryPool<T> : IPool<T> where T : Object
     {

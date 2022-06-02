@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace FallingDamage
+namespace FallingCubes
 {
     [CreateAssetMenu(menuName = "Game/GameConfig", fileName = nameof(GameConfig), order = 131)]
     public class GameConfig : ScriptableObject, IGameConfiguration

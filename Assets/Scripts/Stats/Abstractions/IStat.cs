@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace FallingDamage
+namespace FallingCubes
 {
     public interface IStat<T> : IClonable<IStat<T>> where T : IComparable<T>
     {
