@@ -41,8 +41,7 @@ namespace FallingDamage
 
         public void ResetDamageStat()
         {
-            weapon.Initialize(weapon.DamageStat.Clone());
-            StatChanged();
+            weapon.DamageStat.ClearModifiers();
         }
 
         private IEnumerator WaitForRigidbodySleep()

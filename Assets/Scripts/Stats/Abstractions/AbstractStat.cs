@@ -27,6 +27,12 @@ namespace FallingDamage
             OnValueChanged?.Invoke();
         }
 
+        public void ClearModifiers()
+        {
+            modifiers.Clear();
+            OnValueChanged?.Invoke();
+        }
+
         public abstract IStat<T> Clone();
 
         protected virtual T CalculateResultCurrentValue()

@@ -16,10 +16,14 @@ namespace FallingDamage
         private float lerpFactor;
         private Color maxColor;
 
+        private void Start()
+        {
+            maxColor = renderer.material.color;
+        }
+
         private void SetFactor(float factor)
         {
             lerpFactor = factor;
-            maxColor = renderer.material.color;
             renderer.material.color = Color.Lerp(MinValue, MaxValue, lerpFactor);
         }
     }

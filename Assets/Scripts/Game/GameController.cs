@@ -111,6 +111,7 @@ namespace FallingDamage
             var boundsCenter = configuration.RoomBounds.center + Vector3.up * configuration.RoomBounds.extents.y;
             var boundsSize = configuration.RoomBounds.size;
             boundsSize.y = 0f;
+            boundsSize *= 0.9f;
             var bounds = new Bounds(boundsCenter, boundsSize);
             spawner.SpawnBounds = bounds;
             spawner.CountPerSecond = configuration.ProjectilesSpawnedPerSecond;

@@ -14,5 +14,6 @@ namespace FallingDamage
         IReadOnlyCollection<IStatModifier<T>> Modifiers { get; } 
         void AddModifier(IStatModifier<T> modifier);
         void RemoveModifier(int index);
+        void ClearModifiers();
     }
 }
