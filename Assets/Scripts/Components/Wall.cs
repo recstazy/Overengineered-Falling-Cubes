@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace FallingCubes
+namespace FallingCubes.Core
 {
     public class Wall : MonoBehaviour 
     {

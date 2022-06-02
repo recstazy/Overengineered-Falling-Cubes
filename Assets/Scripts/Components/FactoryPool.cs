@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
+using FallingCubes.Abstractions;
 
-namespace FallingCubes
+namespace FallingCubes.Core
 {
     public class FactoryPool<T> : IPool<T> where T : Object
     {

@@ -1,4 +1,6 @@
-namespace FallingCubes
+using FallingCubes.Stats.Abstract;
+
+namespace FallingCubes.Abstractions
 {
     public interface IWeapon : IDamaging, IOwnable
     {

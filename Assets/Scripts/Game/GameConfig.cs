@@ -1,6 +1,7 @@
 using UnityEngine;
+using FallingCubes.Abstractions;
 
-namespace FallingCubes
+namespace FallingCubes.Core
 {
     [CreateAssetMenu(menuName = "Game/GameConfig", fileName = nameof(GameConfig), order = 131)]
     public class GameConfig : ScriptableObject, IGameConfiguration

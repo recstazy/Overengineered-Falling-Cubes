@@ -1,6 +1,7 @@
 using UnityEngine;
+using FallingCubes.Core;
 
-namespace FallingCubes
+namespace FallingCubes.Abstractions
 {
     public interface IGameConfiguration
     {

@@ -1,6 +1,8 @@
 using UnityEngine;
+using FallingCubes.Abstractions;
+using FallingCubes.Stats.Abstract;
 
-namespace FallingCubes
+namespace FallingCubes.Core
 {
     public class DamageOnCollision : MonoBehaviour, IWeapon
     {

@@ -1,3 +1,5 @@
+using FallingCubes.Abstractions;
+
 namespace FallingCubes
 {
     public class DamageArgs

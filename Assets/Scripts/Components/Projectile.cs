@@ -1,8 +1,9 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using FallingCubes.Abstractions;
 
-namespace FallingCubes
+namespace FallingCubes.Core
 {
     [RequireComponent(typeof(IWeapon), typeof(Rigidbody))]
     public class Projectile : MonoBehaviour 

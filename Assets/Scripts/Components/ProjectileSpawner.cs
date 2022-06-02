@@ -1,8 +1,9 @@
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
+using FallingCubes.Abstractions;
 
-namespace FallingCubes
+namespace FallingCubes.Core
 {
     public class ProjectileSpawner : ISpawner
     {

@@ -1,6 +1,7 @@
 using UnityEngine;
+using FallingCubes.Abstractions;
 
-namespace FallingCubes
+namespace FallingCubes.Core
 {
     public class Unit : MonoBehaviour, IDamagable
     {

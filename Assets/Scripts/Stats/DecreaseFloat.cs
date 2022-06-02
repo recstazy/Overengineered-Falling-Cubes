@@ -1,4 +1,6 @@
-namespace FallingCubes
+using FallingCubes.Stats.Abstract;
+
+namespace FallingCubes.Stats
 {
     public struct DecreaseFloat : IStatModifier<float>
     {

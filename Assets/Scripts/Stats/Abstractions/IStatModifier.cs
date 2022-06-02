@@ -1,6 +1,6 @@
 using System;
 
-namespace FallingCubes
+namespace FallingCubes.Stats.Abstract
 {
     public interface IStatModifier<T> where T : IComparable<T> 
     {

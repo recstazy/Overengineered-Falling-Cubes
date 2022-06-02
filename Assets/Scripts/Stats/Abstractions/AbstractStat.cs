@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace FallingCubes
+namespace FallingCubes.Stats.Abstract
 {
     public abstract class AbstractStat<T> : IStat<T> where T : IComparable<T>
     {

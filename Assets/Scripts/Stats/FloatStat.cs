@@ -1,7 +1,8 @@
 using System;
 using UnityEngine;
+using FallingCubes.Stats.Abstract;
 
-namespace FallingCubes
+namespace FallingCubes.Stats
 {
     [Serializable]
     public class FloatStat : AbstractStat<float>

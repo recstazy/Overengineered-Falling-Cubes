@@ -1,6 +1,7 @@
 using UnityEngine;
+using FallingCubes.Abstractions;
 
-namespace FallingCubes
+namespace FallingCubes.Core
 {
     [CreateAssetMenu(menuName = "Game/Wall Factory", fileName = nameof(WallFactory), order = 131)]
     public class WallFactory : ScriptableObject, IFactory<Wall>

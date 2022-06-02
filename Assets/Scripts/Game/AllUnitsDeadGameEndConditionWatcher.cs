@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using FallingCubes.Abstractions;
 
-namespace FallingCubes
+namespace FallingCubes.Core
 {
     public class AllUnitsDeadGameEndConditionWatcher : IGameEndConditionWatcher
     {

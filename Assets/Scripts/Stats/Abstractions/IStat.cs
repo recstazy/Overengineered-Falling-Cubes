@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
+using FallingCubes.Abstractions;
 
-namespace FallingCubes
+namespace FallingCubes.Stats.Abstract
 {
     public interface IStat<T> : IClonable<IStat<T>> where T : IComparable<T>
     {

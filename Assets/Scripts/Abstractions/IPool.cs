@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace FallingCubes
+namespace FallingCubes.Abstractions
 {
     public interface IPool<T> where T : Object
     {

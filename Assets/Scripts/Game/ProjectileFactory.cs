@@ -1,6 +1,8 @@
 using UnityEngine;
+using FallingCubes.Abstractions;
+using FallingCubes.Stats;
 
-namespace FallingCubes
+namespace FallingCubes.Core
 {
     [CreateAssetMenu(menuName = "Game/Projectile Factory", fileName = nameof(ProjectileFactory), order = 131)]
     public class ProjectileFactory : ScriptableObject, IFactory<Projectile>

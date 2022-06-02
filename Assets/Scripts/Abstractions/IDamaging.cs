@@ -1,4 +1,4 @@
-namespace FallingCubes
+namespace FallingCubes.Abstractions
 {
     public interface IDamaging
     {
